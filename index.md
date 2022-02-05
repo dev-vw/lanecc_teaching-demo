@@ -4,17 +4,17 @@ This is the course homepage
 
 ### Premilinaries
 
-How to ask for help during the lesson
+#### How to ask for help during the lesson
 
-Shared Google Doc page
+#### Shared Google Doc page
 
-Introductions
+#### Introductions
 
-Disability considerations
+#### Disability considerations
 
-Technology Setup
+### Course Schedule
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Lesson 1: [Developing a social science research question through geographic lenses](geospatial-r_lesson1).
 
 ### Software requirements and data downloads
 
