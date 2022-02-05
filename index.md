@@ -1,4 +1,4 @@
-## Setup Page
+## `R Spatial Tools` Course Information
 
 This is the course homepage
 
