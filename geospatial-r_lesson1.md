@@ -11,6 +11,11 @@ description: February 9th, 2022
 - Import vector data into R using the `sf` package.
 - Plot the vector data into R using the `ggplot2` package.
 
+## Lesson 1 dataset and shared notes
+
+- Download lesson 1 data [here](https://bit.ly/3gr1Szk)
+- Access the shared lesson 1 notes [here](https://bit.ly/3sp08fC)
+
 ## Preliminaries
 
 #### Navigating the RStudio workspace
@@ -33,4 +38,10 @@ library(ggmap)
 
 ## Introducing the data
 
-## Understanding the difference between vector and raster datasets
+## Vector and raster datasets
+
+## Understanding projections and CRS
+
+## Import a vector into R
+
+## Plotting vector data
