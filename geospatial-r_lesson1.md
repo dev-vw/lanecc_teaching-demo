@@ -1,11 +1,12 @@
 ---
-layout: page
 title: Geospatial Vector Data in R
 ---
+## Lesson objectives
 
-### Lesson 1 objectives
+## Preliminaries
 
-### Installing R packages
+Please make sure to have `ggplot2`, `sf`, and `ggmap` installed. 
+
 ```
-install.packages(c("ggplot2"))
+install.packages(c("ggplot2", "sf", "ggmap"))
 ```
