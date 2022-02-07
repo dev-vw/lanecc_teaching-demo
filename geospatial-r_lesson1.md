@@ -3,7 +3,7 @@ title: "Lesson 1: Geospatial Vector Data in R"
 description: February 9th, 2022
 ---
 
-## Lesson objectives
+# Lesson objectives
 
 - Gain familiarity with RStudio workspace.
 - Begin executing basic computational operations within the R console.
@@ -11,7 +11,7 @@ description: February 9th, 2022
 - Import vector data into R using the `sf` package.
 - Plot the vector data into R using the `ggplot2` package.
 
-## Lesson 1 dataset and shared notes
+# Lesson 1 dataset and shared notes
 
 Before we begin this tutorial, please be sure to complete the following preparatory tasks:
 
@@ -68,7 +68,7 @@ library(ggplot2)
 library(sf)
 ```
 
-## Vector and raster data structures
+# Vector and raster data structures
 
 #### Vector data overview
 
@@ -94,11 +94,11 @@ Vector data can be stored in a variety of formats, including ESRI shapefiles (`.
 
 In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. _We will cover raster data in detail in a future lesson._
 
-## Introducing the data
+# Introducing the data
 
 In this lesson, we will be working with shapefiles that represent census tract boundaries within Lane County, Oregon.
 
-## Understanding coordinate reference systems
+# Understanding coordinate reference systems
 
 An additional attribute associated with all geospatial data sources, both vector and raster data, is a coordinate reference system (CRS). In the case of vector data, its CRS tells your mapping software (in our case, R) how to position the data's features in geographic space. In other words, it helps answer the question: _How do you represent the earth, a 3D sphere, onto maps, a 2D plane?_
 
@@ -110,8 +110,8 @@ A CRS is defined by two key components:
 
 - **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
 
-## Import a vector datafile into R
+# Import a vector datafile into R
 
-## Plotting vector data
+# Plotting vector data
 
-## Additional reading and resources
+# Additional reading and resources
