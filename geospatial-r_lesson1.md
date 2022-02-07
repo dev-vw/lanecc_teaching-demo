@@ -1,5 +1,5 @@
 ---
-title: Lesson 1: Geospatial Vector Data in R
+title: Lesson 1 | Geospatial Vector Data in R
 description: February 9th, 2022
 ---
 
