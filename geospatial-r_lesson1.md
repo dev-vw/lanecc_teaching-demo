@@ -13,7 +13,7 @@ description: February 9th, 2022
 
 ## Lesson 1 dataset and shared notes
 
-Before we begin this tutorial, please be sure to finish the following preparatory tasks:
+Before we begin this tutorial, please be sure to complete the following preparatory tasks:
 
 #### **Step 1:** Download lesson 1 data
 
@@ -37,22 +37,28 @@ rtools_course
 
 #### **Step 2:** Access the shared lesson 1 notes
 
-You can access the shared notes [here](https://bit.ly/3sp08fC). Please open a separate browser window, and have this page open on a tab. We will be accessing and interacting with this document throughout class.
+You can access the shared notes [here](https://bit.ly/3sp08fC). Please open a separate browser window, and have this page open on a separate tab. We will be accessing and interacting with this document throughout class.
 
 #### **Step 3:** Download the lesson 1 R script
 
 For every lesson, I will write-up the complete R script (or written list of R commands) used in our tutorial. Eventually, you will gain fluency in writing your own scripts for your own analytical and data manipulation purposes. For lesson 1, you can access the R script [here](/scripts/lesson1_script.r).
 
-## Preliminaries
+## An introduction to working with R
 
 #### Navigating the RStudio workspace
 
+This shows an overview of the RStudio workspace:
+
+![rstudio overview](/images/rstudio_overview.png)
+
+#### Executing mathematical operations in the console
+
 #### Installing and loading R packages
 
-Please make sure to have `ggplot2`, `sf`, and `ggmap` installed. You can do this by typing the following into the R console.
+Please make sure to have `ggplot2` and `sf` installed. You can do this by typing the following into the R console.
 
 ```
-install.packages(c("ggplot2", "sf", "ggmap"))
+install.packages(c("ggplot2", "sf"))
 ```
 
 After installation completes, load the packages into your R workspace:
@@ -60,7 +66,6 @@ After installation completes, load the packages into your R workspace:
 ```
 library(ggplot2)
 library(sf)
-library(ggmap)
 ```
 
 ## Vector and raster data structures
