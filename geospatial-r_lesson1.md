@@ -47,9 +47,15 @@ There are two primary types of geospatial data: vector and raster. Vector data r
 
 When a feature's geometry is represented by a single vertex, it is a **point** feature.
 
+![points example](/images/points.png)
+
 When a feature's geometry is represented by a series of interconnected vertices, where the first and last vertex _are not the same_, it is a **polyline** feature.
 
+![line example](/images/line.png)
+
 When a feature's geometry is represented by a series of interconnected vertices, where the first and last vertex _are the same_, it is a **polygon** feature.
+
+![polygon example](/images/poly.png)
 
 #### Vector data formats
 
@@ -71,9 +77,9 @@ An additional attribute associated with all geospatial data sources, both vector
 
 A CRS is defined by two key components:
 
-- **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
-
 - **Datum:** A model of the shape of the earth. Datums can be contextual, designed to fit particular areas on the earth better than areas. In this course, we will use the WGS84 datum.
+
+- **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
 
 ## Import a vector into R
 
