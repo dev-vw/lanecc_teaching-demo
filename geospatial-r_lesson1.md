@@ -63,7 +63,17 @@ In contrast to vector data, rasters are composed of a matrix of cells or pixels 
 
 In this lesson, we will be working with shapefiles that represent census tract boundaries within Lane County, Oregon.
 
-## Understanding projections and CRS
+## Understanding coordinate reference systems
+
+An additional attribute associated with all geospatial data sources, both vector and raster data, is a coordinate reference system (CRS). In the case of vector data, its CRS tells your mapping software (in our case, R) how to position the data's features in geographic space. In other words, it helps answer the question: _How do you represent the earth, a 3D sphere, onto maps, a 2D plane?_
+
+#### There are two components to a CRS
+
+A CRS is defined by two key components:
+
+- **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
+
+- **Datum:** A model of the shape of the earth. Datums can be contextual, designed to fit particular areas on the earth better than areas. In this course, we will use the WGS84 datum.
 
 ## Import a vector into R
 

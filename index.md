@@ -25,7 +25,7 @@ During each lesson, a live Google Doc will be shared amongst the class. I will u
 ## Course Schedule
 
 #### **Lesson 1**: [Geospatial Vector Data in R](geospatial-r_lesson1.md)
-- Download lesson 1 data [here](https://bit.ly/3gr1Szk)
+- Download lesson 1 data [here](/data/lanecounty_censustracts2020.zip)
 - Access the shared lesson 1 notes [here](https://bit.ly/3sp08fC)
 
 ##  Downloading R and RStudio
