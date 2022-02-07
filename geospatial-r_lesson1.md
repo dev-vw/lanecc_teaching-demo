@@ -13,11 +13,35 @@ description: February 9th, 2022
 
 ## Lesson 1 dataset and shared notes
 
-Before we begin this tutorial, please download the lesson 1 data, open the shared lesson notes onto a browser, and download the lesson 1 R script for reference.
+Before we begin this tutorial, please be sure to finish the following preparatory tasks:
 
-- Download lesson 1 data [here](/data/lanecounty_censustracts2020.zip)
-- Access the shared lesson 1 notes [here](https://bit.ly/3sp08fC)
-- The complete lesson 1 R script can be accessed [here](/scripts/lesson1_script.r)
+#### **Step 1:** Download lesson 1 data
+
+You can download the lesson 1 data [here](/data/lanecounty_censustracts2020.zip). I highly recommended that you create dedicated folder for this course. Here's a suggested organizational structure for your course folder:
+
+```
+rtools_course
+├── data
+│   └── lesson1_dat
+│       ├── _archive
+│       │   └── lanecounty_censustracts2020.zip
+│       └── lanecounty_censustracts2020
+│           ├── lanecounty_censustracts2020.dbf
+│           ├── lanecounty_censustracts2020.prj
+│           ├── lanecounty_censustracts2020.shp
+│           └── lanecounty_censustracts2020.shx
+└── lessons
+    └── lesson1
+        └── lesson1_script.r
+```
+
+#### **Step 2:** Access the shared lesson 1 notes
+
+You can access the shared notes [here](https://bit.ly/3sp08fC). Please open a separate browser window, and have this page open on a tab. We will be accessing and interacting with this document throughout class.
+
+#### **Step 3:** Download the lesson 1 R script
+
+For every lesson, I will write-up the complete R script (or written list of R commands) used in our tutorial. Eventually, you will gain fluency in writing your own scripts for your own analytical and data manipulation purposes. For lesson 1, you can access the R script [here](/scripts/lesson1_script.r).
 
 ## Preliminaries
 
@@ -63,7 +87,7 @@ Vector data can be stored in a variety of formats, including ESRI shapefiles (`.
 
 #### Rasters
 
-In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. Rasters will be a dedicated tutorial in a future lesson.
+In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. _We will cover raster data in detail in a future lesson._
 
 ## Introducing the data
 
@@ -81,7 +105,7 @@ A CRS is defined by two key components:
 
 - **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
 
-## Import a vector into R
+## Import a vector datafile into R
 
 ## Plotting vector data
 
