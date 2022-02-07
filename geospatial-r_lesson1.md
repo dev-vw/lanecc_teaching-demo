@@ -1,9 +1,8 @@
 ---
 title: Geospatial Vector Data in R
 description: Lesson 1 tutorial
-theme: jekyll-theme-cayman
-layout: page
 ---
+
 ## Lesson objectives
 
 ## Preliminaries
