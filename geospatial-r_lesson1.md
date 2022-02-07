@@ -15,7 +15,7 @@ description: February 9th, 2022
 
 Before we begin this tutorial, please download the lesson 1 data, open the shared lesson notes onto a browser, and download the lesson 1 R script for reference.
 
-- Download lesson 1 data [here](https://bit.ly/3gr1Szk)
+- Download lesson 1 data [here](/data/lanecounty_censustracts2020.zip)
 - Access the shared lesson 1 notes [here](https://bit.ly/3sp08fC)
 - The complete lesson 1 R script can be accessed [here](/scripts/lesson1_script.r)
 
