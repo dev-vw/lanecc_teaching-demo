@@ -1,4 +1,4 @@
-# Introduction to Geospatial Vector Data in `R`
+### Lesson 1 objectives
 
 #### Installing R packages
 ```
