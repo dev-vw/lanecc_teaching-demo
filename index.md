@@ -6,6 +6,10 @@ This is the homepage for the **R Spatial Tools for Social Science** course. At t
 
 **Please refer to individual lesson pages for specific learning materials and tutorials.**
 
+# Class policies and code of conduct
+
+Please access [this document](class-policies.md) to view the class policies and code of conduct.
+
 # Premilinaries
 
 Given the unique challenges that students face in an online learning environment, I have aimed to make this course as interactive as possible. Each week will progressively advance your skills within the R programming environment. No prior R knowledge is assumed, but given diligent learning and attendance of the course sessions, R competency will be expected by the end of the quarter.
@@ -21,8 +25,6 @@ The weekly classes will be tutorial based, and I will be live-coding over Zoom. 
 During each lesson, a live Google Doc will be shared amongst the class. I will use this space to include any errata or corrections to the lesson notes, insert links towards helpful resources mentioned during class, etc. Additionally, any in-class exercises will be posted under the **Lesson Activities** heading.
 
 *You are encouraged to interact with this document.* Please contribute questions under the **Student Questions** header. If you have thoughts about the lesson, please feel free to comment under the **Comments** header. Each week's shared lesson notes can be accessed through the course schedule.
-
-#### Class policies and code of conduct
 
 # Course Schedule
 
