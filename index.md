@@ -22,6 +22,8 @@ During each lesson, a live Google Doc will be shared amongst the class. I will u
 
 *You are encouraged to interact with this document.* Please contribute questions under the **Student Questions** header. If you have thoughts about the lesson, please feel free to comment under the **Comments** header. Each week's shared lesson notes can be accessed through the course schedule.
 
+#### Class policies and code of conduct
+
 # Course Schedule
 
 #### **Lesson 1**: [Geospatial Vector Data in R](geospatial-r_lesson1.md)
@@ -35,10 +37,10 @@ This course requires that you have the latest version of R and RStudio installed
 **Please access the following links to download and install R and RStudio for your operating system.** All common operating systems (Windows, MacOS, Linux) should be able to host R and RStudio. Please contact me by email ASAP if you are having any trouble with installation.
 
 - [R](https://cloud.r-project.org/)
+- If you're on a Windows machine, please access [this link](https://cloud.r-project.org/) to download R.
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download)
 
 # About your instructor
 
 My name is Vania and I'm a fifth year PhD candidate in geography at UC Santa Barbara. Although my degrees are in public health and infectious disease, most of my work is interdisciplinary and focused on incorporating computational techniques in public health research. I can be reached at [vaniawang@ucsb.edu](mailto:vaniawang@ucsb.edu).
 
-# Class policies and code of conduct
