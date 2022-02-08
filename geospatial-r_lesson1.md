@@ -19,7 +19,7 @@ Before we begin this tutorial, please be sure to complete the following preparat
 
 You can download the lesson 1 data [here](/data/lanecounty_censustracts2020.zip). I highly recommended that you create dedicated folder for this course. Here's a suggested organizational structure for your course folder:
 
-```
+```shell
 rtools_course
 ├── data
 │   └── lesson1_dat
@@ -82,7 +82,7 @@ Within my computer (I'm running a distribution of the Linux operating system cal
 
 Once you know the path to your working directory, simply run the `setwd()` command in the R console:
 
-```
+```r
 setwd("/home/vaniawang/.../rtools_course/")
 ```
 
@@ -90,7 +90,7 @@ setwd("/home/vaniawang/.../rtools_course/")
 
 When you first open R, you are likely to be greeted with something like the following in your console:
 
-```
+```r
 R version 4.1.2 (2021-11-01) -- "Bird Hippie"
 Copyright (C) 2021 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
@@ -123,12 +123,7 @@ The resulting output should be (kind of) expected:
 ```r
 [1] 2
 ```
-
-| :point_up:  Digression Alert!   |
-|You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form. |
-|-----------------------------------------|
-
-
+> :exclamation: **Digression alert**: You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form.
 
 #### Commenting and documenting your code
 
