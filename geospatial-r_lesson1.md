@@ -17,7 +17,9 @@ Before we begin this tutorial, please be sure to complete the following preparat
 
 #### **Step 1:** Download lesson 1 data
 
-You can download the lesson 1 data [here](/data/lanecounty_censustracts2020.zip). I highly recommended that you create dedicated folder for this course. Here's a suggested organizational structure for your course folder:
+You can download the lesson 1 data [here](/data/lanecounty_censustracts2020.zip). The this is a zipped folder (`lanecounty_censustracts2020.zip`) containing four vector files. Unzip this file and take note of the location where its saved.
+
+I highly recommended that you create dedicated folder for this course. Here's a suggested organizational structure for your course folder:
 
 ```shell
 rtools_course
@@ -189,9 +191,9 @@ When a feature's geometry is represented by a series of interconnected vertices,
 
 Vector data can be stored in a variety of formats, including ESRI shapefiles (`.shp`), GeoJson (`.geojson`), Scalable Vector Graphics (`.svg`), etc. Regardless of format, you can think of a shapefile as a table, where rows represent specific features, and columns store information about the feature's attributes. The only requirement for this table is the inclusion of a **geometry** column, which describes the shape and position of a feature in geographic space. 
 
-#### Rasters
+#### Rasters data overview
 
-In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. **We will cover raster data in detail in a future lesson.**
+In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. An example of raster data are precipitation maps, where each pixel or grid on the map is assigned a value indicating the amount of precipitation received for that location. **We will cover raster data in detail in a future lesson.**
 
 # About the data used in this lesson
 
@@ -201,16 +203,51 @@ In this lesson, we will be working with shapefiles that contain polygon features
 
 An additional attribute associated with all geospatial data sources, both vector and raster data, is a coordinate reference system (CRS). In the case of vector data, its CRS tells your mapping software (in our case, R) how to position the data's features in geographic space. In other words, it helps answer the question: _How do you represent the earth, a 3D sphere, onto maps, a 2D plane?_
 
-#### There are two components to a CRS
+#### Two main components to a CRS
 
 A CRS is defined by two key components:
 
-- **Datum:** A model of the shape of the earth. Datums can be contextual, designed to fit particular areas on the earth better than areas. In this course, we will use the WGS84 datum.
+- **Datum:** A model for the shape of the earth. Datums can be contextual, designed to fit particular areas on the earth better than areas.
 
-- **Projection:** This is the computational process that flattens features on the spherical surface of the earth onto a 2D plane.
+- **Projection:** This is a mathematical function that transforms the X and Y coordinates of one spatial reference framework, to the X and Y coordinates of another spatial reference framework.
+
+Given that both of these components can result in significant distortions to geographic data, it is vital that we verify that a data source has a CRS, and if not, specify it. Not doing this will result in funky looking features and maps.
+
+####  Datum (in terms of fruit)
+
+I think we can all agree that the earth is round-ish in shape. A datum is simply a formalized round-ish model of the earth. Let's think of the earth in terms of round fruit. Which do we think best models the spherical/ellipsoid/round-ish shape earth? A lime? A watermelon? The answer is contextual. Some datums may best reflect the ground truth of certain areas of the earth, but not others. For the purposes of our course, we'll start with WGS84, which is commonly used in global positioning systems (GPS).
+
+#### Projection (in terms of fruit)
+
+Given that the earth is curved and maps are flat, there needs to be a process for defining how a position on a curved surface translates to a flat one. Projections are these mathematical processes. If we were to choose a watermelon as our datum, the way we peel the watermelon and flatten the peels is analogous to map projections. There are many ways to peel and flatten the watermelon, which may result distorted regions of the globe.
 
 # Import a vector datafile into R
 
+Importing shapefiles into R is simple using the [`sf` package](https://r-spatial.github.io/sf/). After importing this library into R using `library(sf)`, you should have access to all of the package's functions. We will use the `st_read(...)` function to read the shapefile into our R workspace. Please type the following into your `lesson1_script.R`:
+
+```r
+# Use the st_read(...) function to read the shapefile containing lane county census tracts
+lc_ct <- st_read("data/lesson1_dat/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
+
+```
+
+Here, the `st_read(...)` function takes a character string containing the path to the `lanecounty_censustracts2020.shp` file and saves the resulting data in a variable called `lc_ct`. Note that although the `st_read(...)` function does not query for the other three files in that directory (ending in `.dbf`, `prj`, `shx`), they are still necessary for the shapefile to be imported. Do not delete these other files!
+
 # Plotting vector data
+
+Now that we've imported the Lane County Census Tract features into the variable named `lc_ct`, we can plot this data to graphically see what these census tracts look like! Please add the following to your `lesson1_script.R`:
+
+```r
+# Plot the loaded lc_ct 
+ggplot() + geom_sf(data = lc_ct)
+```
+
+The ggplot() initializes a graphical object. Running this function alone will produce a blank graphic. 
+
+![blank ggplot](/images/blank-ggplot.png)
+
+Using the `geom_sf(...)` function, we will layer on the `lc_ct` data saved in the prior step to visualize the census tracts. To do this, we add `lc_ct` to the `data` parameter for the function: `geom_sf(data = lc_ct)`
+
+![lane county census tracts](/images/lanecounty_censustracts.png)
 
 # Additional reading and resources

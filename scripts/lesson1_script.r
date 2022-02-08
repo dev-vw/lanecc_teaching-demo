@@ -8,11 +8,10 @@ library(ggmap)
 setwd("/home/vaniawang/Documents/teaching/lanecc_teaching-demo/rtools_course/")
 
 # Use the st_read(...) function to read the shapefile containing
-or_ct <- st_read("data/lesson1_dat/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
+lc_ct <- st_read("data/lesson1_dat/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
 
-# Plot the loaded shapefile
-ggplot() + geom_sf(data=or_ct)
-
+# Plot the loaded lc_ct 
+ggplot() + geom_sf(data = lc_ct)
 
 lanecounty_basemap <- ggmap::get_stamenmap(bbox = c(left = -124.3944, 
                                                     bottom = 43.5305, 
@@ -21,7 +20,7 @@ lanecounty_basemap <- ggmap::get_stamenmap(bbox = c(left = -124.3944,
                                            zoom = 9)
 
 ggmap::ggmap(lanecounty_basemap) +
-  geom_sf(data = or_ct,
+  geom_sf(data = lc_ct,
           fill = NA,
           color = "#00abff",
           inherit.aes = FALSE) +
