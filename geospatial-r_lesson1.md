@@ -123,11 +123,12 @@ The resulting output should be (kind of) expected:
 ```r
 [1] 2
 ```
----
-**DIGRESSION ALERT**
 
-You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form.
----
+| :point_up:  Digression Alert!   |
+|You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form. |
+|-----------------------------------------|
+
+
 
 #### Commenting and documenting your code
 
