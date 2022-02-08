@@ -43,13 +43,29 @@ You can access the shared notes [here](https://bit.ly/3sp08fC). Please open a se
 
 For every lesson, I will write-up the complete R script (or written list of R commands) used in our tutorial. Eventually, you will gain fluency in writing your own scripts for your own analytical and data manipulation purposes. For lesson 1, you can access the R script [here](/scripts/lesson1_script.r).
 
-## An introduction to working with R
+# What learn R?
+
+- R is **reproducible**
+- R is **powerful**
+- R is **egalitarian**
+- R is **free**
+
+# An introduction to working with R
 
 #### Navigating the RStudio workspace
 
-This shows an overview of the RStudio workspace:
+For this course, we will be using RStudio as our integrated development environment (IDE). Like R itself, RStudio is also free and open-source. RStudio is also available with premium features through a commercial license, but these are largely unnecessary for the majority of users. Throughout this course, the RStudio IDE will be the portal through which we will interact with R: we will be able to write R scripts and code, generate graphics, organize project files, and much more.
+
+The following shows an overview of the RStudio workspace:
 
 ![rstudio overview](/images/rstudio_overview.png)
+
+RStudio is organized into four smaller panes. Most of our work will occur within the **source** and **console** panes.
+
+- **Environment/History/Connections/Git**: This pane is located by default at the top-right. The **environment** tab will show any objects or variables that are declared during the current R session while **history** shows all commands that have been declared during this session. We will not using the **connections** or **git** tab during this course, but these show any connections to remote servers and/or Git repositories (a popular distributed version control system), respectively.
+- **Files/Plots/Packages/Help/Viewer**: This pane is located by default at the lower right portion of the RStudio workspace. The **files** tab will show the files contained within the current working directory. The **plots** tab will show any plots that have been generated during this R session. The **packages** tab will show a list of packages that have been loaded into the current R environment. Finally, the **helper** tab shows help documentation (when queried) and the **viewer** tab shows any output designed for web development.
+- **Source**: This pane is located at the upper left portion of your workspace. It shows any current documents used to save or document R commands and code. In this course, we will mainly use R scripts, but other documentation could include R markdown, regular text files, and scripts from other programming languages like Python and C.
+- **Console/Jobs**: This is pane located on the bottom-left. The console allows direct interaction with the R interpreter. The **jobs** tab will display any ongoing computation occuring in the background.
 
 #### Executing mathematical operations in the console
 

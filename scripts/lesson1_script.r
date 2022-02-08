@@ -1,20 +1,17 @@
-# Load the required libraries
+# Load the needed packages
 library(sf)
 library(ggplot2)
+library(ggmaps)
+
+# To make your life easier, set your working directory to have all
+# needed files easily accessible!
+setwd("/home/vaniawang/Documents/teaching/lanecc_teaching-demo/rtools_course/")
 
 # Use the st_read(...) function to read the shapefile containing
-# 
-or_ct <- st_read("data/CensusTracts2020/CensusTracts2020.shp")
-or_ct_3857 <- st_transform(or_ct, 3857)
+or_ct <- st_read("data/lesson1_dat/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
 
-lane_ct_3857 <- or_ct_3857[which(or_ct_3857$COUNTY == "Lane County"), ]
-
-st_write(lane_ct_3857, 
-         "data/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
-
-lane_ct_read <- st_read("data/lanecounty_censustracts2020/lanecounty_censustracts2020.shp")
-
-ggplot() + geom_sf(data=lane_ct_read, aes(fill = HISP18))
+# Plot the loaded shapefile
+ggplot() + geom_sf(data=or_ct)
 
 bmap <- ggmap::get_stamenmap(bbox=c(left=-124.3944, 
                                     bottom=43.5305, 
@@ -23,10 +20,8 @@ bmap <- ggmap::get_stamenmap(bbox=c(left=-124.3944,
                              zoom  = 8)
 
 ggmap::ggmap(bmap) +
-  coord_sf(crs = st_crs(3857)) +
-  geom_sf(data=lane_ct,
-#          aes(fill = HISP18),
+  geom_sf(data=or_ct,
+          aes(fill="none"),
           inherit.aes = FALSE) +
-  ggtitle("Oregon Census Tracts")
-
-ggmap(bmap)
+  ggtitle("Oregon Census Tracts") +
+  coord_sf(crs = st_crs(4326))
