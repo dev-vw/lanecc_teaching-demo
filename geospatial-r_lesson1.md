@@ -63,9 +63,30 @@ The following shows an overview of the RStudio workspace:
 RStudio is organized into four smaller panes. Most of our work will occur within the **source** and **console** panes.
 
 - **Environment/History/Connections/Git**: This pane is located by default at the top-right. The **environment** tab will show any objects or variables that are declared during the current R session while **history** shows all commands that have been declared during this session. We will not using the **connections** or **git** tab during this course, but these show any connections to remote servers and/or Git repositories (a popular distributed version control system), respectively.
+
 - **Files/Plots/Packages/Help/Viewer**: This pane is located by default at the lower right portion of the RStudio workspace. The **files** tab will show the files contained within the current working directory. The **plots** tab will show any plots that have been generated during this R session. The **packages** tab will show a list of packages that have been loaded into the current R environment. Finally, the **helper** tab shows help documentation (when queried) and the **viewer** tab shows any output designed for web development.
+
 - **Source**: This pane is located at the upper left portion of your workspace. It shows any current documents used to save or document R commands and code. In this course, we will mainly use R scripts, but other documentation could include R markdown, regular text files, and scripts from other programming languages like Python and C.
-- **Console/Jobs**: This is pane located on the bottom-left. The console allows direct interaction with the R interpreter. The **jobs** tab will display any ongoing computation occuring in the background.
+
+- **Console/Jobs**: This is pane located on the bottom-left. The console allows direct interaction with the R interpreter. The **jobs** tab will display any operations occuring in the background.
+
+#### Setting your working directory
+
+Earlier, I had mentioned creating a dedicated folder containing all course materials on your personal computer. Not only is it great to have an organized file system, we can also tell RStudio to set default working directory. This makes finding files easier, and will pay dividends in maximizing working efficiency. You won't believe the amount of errors that result fromt simply not knowing which directory you're working in!
+
+In my case, all my course materials are contained within a folder titled `rtools_course`. Within my computer (I'm running a distribution of the Linux operating system called Ubuntu), it is located at the following file **path**, or a character string that uniquely identifies the placement of files within a file system. 
+
+```
+setwd("/home/vaniawang/.../rtools_course/")
+```
+
+The path for your own computer will depend on your operating system. For MacOS, a typical path may look like the following:
+
+`/Users/<YOUR-USERNAME>/Documents/rtools_course`
+
+For Windows, the path delimiters use back slashes rather than forward slashes than MacOS and Linux, which are both Unix-based operating systems. An example path may look like this:
+
+`C:\Documents\rtools_course`
 
 #### Executing mathematical operations in the console
 
