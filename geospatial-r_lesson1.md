@@ -80,8 +80,7 @@ For Windows, the path delimiters use back slashes rather than forward slashes. A
 
 Within my computer (I'm running a distribution of the Linux operating system called Ubuntu), `rtools_course` is located at `/home/vaniawang/.../rtools_course/`.
 
-Once you know the path to your working directory, simply run the `setwd()` command with the path name as input: simply enclose the path name in quotations and place insert it between the round brackets.
-
+Once you know the path to your working directory, simply run the `setwd()` command in the R console:
 
 ```
 setwd("/home/vaniawang/.../rtools_course/")
@@ -89,17 +88,60 @@ setwd("/home/vaniawang/.../rtools_course/")
 
 #### Executing mathematical operations in the console
 
+When you first open R, you are likely to be greeted with something like the following in your console:
+
+```
+R version 4.1.2 (2021-11-01) -- "Bird Hippie"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+```
+
+You can begin typing code after the `>` prompt. Let's start with some basic arithmetic. Type the following into the console and press `ENTER`:
+
+```r
+1 + 1
+```
+
+The resulting output should be (kind of) expected:
+
+```r
+[1] 2
+```
+---
+**DIGRESSION ALERT**
+
+You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form.
+---
+
+#### Commenting and documenting your code
+
 #### Installing and loading R packages
 
 Please make sure to have `ggplot2` and `sf` installed. You can do this by typing the following into the R console.
 
-```
+```r
 install.packages(c("ggplot2", "sf"))
 ```
 
 After installation completes, load the packages into your R workspace:
 
-```
+```r
 library(ggplot2)
 library(sf)
 ```
@@ -130,7 +172,7 @@ Vector data can be stored in a variety of formats, including ESRI shapefiles (`.
 
 In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. _We will cover raster data in detail in a future lesson._
 
-# Introducing the data
+# About the data used in this lesson
 
 In this lesson, we will be working with shapefiles that represent census tract boundaries within Lane County, Oregon.
 

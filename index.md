@@ -6,7 +6,7 @@ This is the homepage for the **R Spatial Tools for Social Science** course. At t
 
 **Please refer to individual lesson pages for specific learning materials and tutorials.**
 
-## Premilinaries
+# Premilinaries
 
 Given the unique challenges that students face in an online learning environment, I have aimed to make this course as interactive as possible. Each week will progressively advance your skills within the R programming environment. No prior R knowledge is assumed, but given diligent learning and attendance of the course sessions, R competency will be expected by the end of the quarter.
 
@@ -22,13 +22,13 @@ During each lesson, a live Google Doc will be shared amongst the class. I will u
 
 *You are encouraged to interact with this document.* Please contribute questions under the **Student Questions** header. If you have thoughts about the lesson, please feel free to comment under the **Comments** header. Each week's shared lesson notes can be accessed through the course schedule.
 
-## Course Schedule
+# Course Schedule
 
 #### **Lesson 1**: [Geospatial Vector Data in R](geospatial-r_lesson1.md)
 - Download lesson 1 data [here](/data/lanecounty_censustracts2020.zip)
 - Access the shared lesson 1 notes [here](https://bit.ly/3sp08fC)
 
-##  Downloading R and RStudio
+#  Downloading R and RStudio
 
 This course requires that you have the latest version of R and RStudio installed on your personal computer. **R** is an open-source programming language and environment uniquely capable of hosting statistical computing and graphics. **RStudio** is an integrated development environment (IDE) that uses **R** to develop and create statistical programs. Although there are many IDEs that support R programming and interaction (e.g. emacs, vim, etc.), we will be using RStudio in this course: it is a powerful, versatile, freely available, and commonly used application across academic research and the data science industry. 
 
@@ -37,6 +37,8 @@ This course requires that you have the latest version of R and RStudio installed
 - [R](https://cloud.r-project.org/)
 - [RStudio Desktop](https://www.rstudio.com/products/rstudio/download/#download)
 
-## About your instructor
+# About your instructor
 
 My name is Vania and I'm a fifth year PhD candidate in geography at UC Santa Barbara. Although my degrees are in public health and infectious disease, most of my work is interdisciplinary and focused on incorporating computational techniques in public health research. I can be reached at [vaniawang@ucsb.edu](mailto:vaniawang@ucsb.edu).
+
+# Class policies and code of conduct
