@@ -74,19 +74,18 @@ RStudio is organized into four smaller panes. Most of our work will occur within
 
 Earlier, I had mentioned creating a dedicated folder containing all course materials on your personal computer. Not only is it great to have an organized file system, we can also tell RStudio to set default working directory. This makes finding files easier, and will pay dividends in maximizing working efficiency. You won't believe the amount of errors that result fromt simply not knowing which directory you're working in!
 
-In my case, all my course materials are contained within a folder titled `rtools_course`. Within my computer (I'm running a distribution of the Linux operating system called Ubuntu), it is located at the following file **path**, or a character string that uniquely identifies the placement of files within a file system. 
+A file **path** is a string of characters that uniquely identifies the placement of files within a file system. The format of the path to your individual `rtools_course` directory will depend on your operating system. For MacOS, a typical path may look like the following: `/Users/<YOUR-USERNAME>/Documents/.../rtools_course`
+
+For Windows, the path delimiters use back slashes rather than forward slashes. An example Windows path may look like this: `C:\Documents\...\rtools_course`
+
+Within my computer (I'm running a distribution of the Linux operating system called Ubuntu), `rtools_course` is located at `/home/vaniawang/.../rtools_course/`.
+
+Once you know the path to your working directory, simply run the `setwd()` command with the path name as input: simply enclose the path name in quotations and place insert it between the round brackets.
+
 
 ```
 setwd("/home/vaniawang/.../rtools_course/")
 ```
-
-The path for your own computer will depend on your operating system. For MacOS, a typical path may look like the following:
-
-`/Users/<YOUR-USERNAME>/Documents/rtools_course`
-
-For Windows, the path delimiters use back slashes rather than forward slashes than MacOS and Linux, which are both Unix-based operating systems. An example path may look like this:
-
-`C:\Documents\rtools_course`
 
 #### Executing mathematical operations in the console
 
