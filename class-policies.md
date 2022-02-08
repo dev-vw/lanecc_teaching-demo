@@ -1,3 +1,8 @@
+---
+title: Class Policies and Code of Conduct
+description: February 9, 2022
+---
+
 # Land Acknowledgement
 
 Lane Community College is located on Kalapuya Ilihi, the traditional indigenous homeland of the Kalapuya people. Today, descendants are citizens of the Confederated Tribes of the Grand Ronde Community of Oregon and the Confederated Tribes of the Siletz Indians of Oregon, and they continue to make important contributions in their communities and across the land we now refer to as Oregon.
