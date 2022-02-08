@@ -1,4 +1,7 @@
 # Site-wide configuration
+
 theme: jekyll-theme-cayman
 title: R Spatial Tools for Social Science
 description: This is the homepage for the "R Spatial Tools for Social Science" course at Lane Community College.
+plugins:
+- jemoji
