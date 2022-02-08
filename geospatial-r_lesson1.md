@@ -86,7 +86,7 @@ Once you know the path to your working directory, simply run the `setwd()` comma
 setwd("/home/vaniawang/.../rtools_course/")
 ```
 
-#### Executing mathematical operations in the console
+#### Interacting with the R console
 
 When you first open R, you are likely to be greeted with something like the following in your console:
 
@@ -115,17 +115,42 @@ Type 'q()' to quit R.
 You can begin typing code after the `>` prompt. Let's start with some basic arithmetic. Type the following into the console and press `ENTER`:
 
 ```r
-1 + 1
+1 + 10
 ```
 
-The resulting output should be (kind of) expected:
+The resulting output should be expected:
 
 ```r
-[1] 2
+[1] 11
 ```
-> :exclamation: **Digression alert**: You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form.
 
-#### Commenting and documenting your code
+> :exclamation: **Digression Alert** :exclamation: You may be thinking what `[1]` means. Many objects in R are expressed as the vectors: a sequence of elements of the same type (integer, strings, or logicals). Vectors have lengths, which indicate the number of elements it contains.  The `[1]` simply shows the numbered element of the vector that's returned. The addition operator used here `+` returns the value `2` in vector form.
+
+#### Assigning variables
+
+Now that we have an understanding of executing basic functions within the R console, we can start storing values in variables using the `<-` operator:
+
+```r
+x <- 6
+```
+
+The value assigned to x can be accessed by directly typing the variable name into the console:
+
+```r
+> x
+[1] 6
+```
+
+#### Documenting your code
+
+Now that we've become familiar with interacting with R through the console, let's begin learning about one of the more powerful capabilities of R: saving reporducible commands in scripts. Open a new R script by selecting `File > New File > R Script`. Immediately save the script as `lesson1_script` into your working directory, as to not lose your work. Be sure to consistently save your work by going to `File > Save` or using the keyboard shortcut `Ctrl-s`.
+
+Type the following into the first two lines of your script. Here, we wrote down the command for setting our working directory that we ran before. Above that, however, is something new: any lines of code preceded by a `#` is a **comment**. All comments are ignored with this script is ultimately executed. Comments are very useful because it increases the readability of your code, and helps any collaborators (including future you) understand how your script works. In this example, I state explicitly what `setwd(...)` does. **It is important that you get into including as detailed and informative comments as you can!**
+
+```r
+# Set working directory at the local rtools_course folder
+setwd("/home/vaniawang/Documents/teaching/lanecc_teaching-demo/rtools_course/")
+```
 
 #### Installing and loading R packages
 
@@ -135,7 +160,7 @@ Please make sure to have `ggplot2` and `sf` installed. You can do this by typing
 install.packages(c("ggplot2", "sf"))
 ```
 
-After installation completes, load the packages into your R workspace:
+After installation completes, load the packages into your R workspace. Include the following into your `lesson1_script.R`.
 
 ```r
 library(ggplot2)
@@ -147,7 +172,7 @@ library(sf)
 #### Vector data overview
 
 There are two primary types of geospatial data: vector and raster. Vector data represent specific physical features on the earth's surface. A vector feature's shape is represented by its **geometry**. Geometries can be composed of one or more vertices in geographic space.
-
+2
 When a feature's geometry is represented by a single vertex, it is a **point** feature.
 
 ![points example](/images/points.png)
@@ -166,11 +191,11 @@ Vector data can be stored in a variety of formats, including ESRI shapefiles (`.
 
 #### Rasters
 
-In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. _We will cover raster data in detail in a future lesson._
+In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. **We will cover raster data in detail in a future lesson.**
 
 # About the data used in this lesson
 
-In this lesson, we will be working with shapefiles that represent census tract boundaries within Lane County, Oregon.
+In this lesson, we will be working with shapefiles that contain polygon features representing census tract boundaries within Lane County, Oregon. Prior to this lesson, I had downloaded the 2020 census tract shapefile data from the [Oregon Spatial Data Library](https://spatialdata.oregonexplorer.info/geoportal/). The documentation for this data [is described in detail here](https://bit.ly/3GAcIxy).
 
 # Understanding coordinate reference systems
 
