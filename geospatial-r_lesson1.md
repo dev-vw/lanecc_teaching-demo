@@ -285,6 +285,14 @@ Using the `geom_sf(...)` function, we will layer on the `lc_ct` data saved in th
 
 ![lane county census tracts](/images/lanecounty_censustracts.png)
 
+# Lesson 1 Summary
+
+- Explored the RStudio interface
+- Played with the RStudio console to run basic arithmetic with the R interpreter
+- Understand the rules of variable assignment and their naming conventions
+- Understand the difference between vector and raster data
+- We made a basic map of Lane County's Census Tracts!
+
 # Additional reading and resources
 
 #### More beginner R tutorials
