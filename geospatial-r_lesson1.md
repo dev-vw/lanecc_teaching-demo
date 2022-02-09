@@ -268,6 +268,9 @@ Here, the `st_read(...)` function takes a character string containing the path t
 
 Now that we've imported the Lane County Census Tract features into the variable named `lc_ct`, we can plot this data to graphically see what these census tracts look like! Please add the following to your `lesson1_script.R`:
 
+![raster example](/images/raster-ex.gif)
+[Image Source](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/what-is-raster-data.htm)
+
 ```r
 # Plot the loaded lc_ct 
 ggplot() + geom_sf(data = lc_ct)
@@ -291,4 +294,4 @@ Using the `geom_sf(...)` function, we will layer on the `lc_ct` data saved in th
 #### Advanced resources
 
 - [Here's a guide](http://adv-r.had.co.nz/Style.html) to coding style and conventions in R
-- [*Geocomputation with R, 2019, Lovelace et al*](https://geocompr.robinlovelace.net/)
+- [*Geocomputation with R*, 2019, Lovelace et al](https://geocompr.robinlovelace.net/)
