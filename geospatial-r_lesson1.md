@@ -146,6 +146,34 @@ The value assigned to x can be accessed by directly typing the variable name int
 [1] 6
 ```
 
+When naming variables, remember to give a descriptive name to reflect the object stored within that variable. There naming conventions you should be aware of.
+
+- Variable names should not *start with* numbers or special characters (e.g. `_`, `$`).
+- Variable names should not *contain* special characters (e.g. `-`).
+- Variable names that start with a period `.` will be hidden from the environment. Try to avoid this when starting out.
+- Variable names should be lowercase, and use underscores `_` to separate words within a name.
+
+```r
+# Invalid, will throw an error
+_first_day
+first-day
+1_day
+$day
+
+# Not invalid, but avoid
+.first_day
+
+# Good
+first_day
+day_2
+
+# Not invalid, but poorly named
+this_is_the_variable_x
+firstday
+secondday
+xyz3
+```
+
 #### Documenting your code
 
 Now that we've become familiar with interacting with R through the console, let's begin learning about one of the more powerful capabilities of R: saving reporducible commands in scripts. Open a new R script by selecting `File > New File > R Script`. Immediately save the script as `lesson1_script` into your working directory, as to not lose your work. Be sure to consistently save your work by going to `File > Save` or using the keyboard shortcut `Ctrl-s`.
