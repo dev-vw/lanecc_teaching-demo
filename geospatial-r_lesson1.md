@@ -226,6 +226,10 @@ Vector data can be stored in a variety of formats, including ESRI shapefiles (`.
 
 In contrast to vector data, rasters are composed of a matrix of cells or pixels that represent a unit of geographic space. Each of these units contain values that represent conditions for the specified area. An example of raster data are precipitation maps, where each pixel or grid on the map is assigned a value indicating the amount of precipitation received for that location. **We will cover raster data in detail in a future lesson.**
 
+|![raster example](/images/raster-ex.gif)|
+|[Image Source](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/what-is-raster-data.htm)|
+
+
 # About the data used in this lesson
 
 In this lesson, we will be working with shapefiles that contain polygon features representing census tract boundaries within Lane County, Oregon. Prior to this lesson, I had downloaded the 2020 census tract shapefile data from the [Oregon Spatial Data Library](https://spatialdata.oregonexplorer.info/geoportal/). The documentation for this data [is described in detail here](https://bit.ly/3GAcIxy).
@@ -267,9 +271,6 @@ Here, the `st_read(...)` function takes a character string containing the path t
 # Plotting vector data
 
 Now that we've imported the Lane County Census Tract features into the variable named `lc_ct`, we can plot this data to graphically see what these census tracts look like! Please add the following to your `lesson1_script.R`:
-
-![raster example](/images/raster-ex.gif)
-[Image Source](https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/what-is-raster-data.htm)
 
 ```r
 # Plot the loaded lc_ct 
