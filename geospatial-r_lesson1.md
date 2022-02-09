@@ -5,8 +5,11 @@ description: February 9th, 2022
 
 # Lesson objectives
 
+#### Objective 1: Begin getting comfortable with R and the RStudio IDE 
 - Gain familiarity with RStudio workspace.
 - Begin executing basic computational operations within the R console.
+
+#### Objective 2: Start working with vector geospatial data
 - Understand the difference between **vector** and **raster** datasets.
 - Import vector data into R using the `sf` package.
 - Plot the vector data into R using the `ggplot2` package.
