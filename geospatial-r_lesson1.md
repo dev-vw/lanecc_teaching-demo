@@ -254,3 +254,13 @@ Using the `geom_sf(...)` function, we will layer on the `lc_ct` data saved in th
 ![lane county census tracts](/images/lanecounty_censustracts.png)
 
 # Additional reading and resources
+
+#### More beginner R tutorials
+
+- [Software Carpentries: *R for Reproducible Scientific Analysis*](https://swcarpentry.github.io/r-novice-gapminder/). A Spanish version of this tutorial is available [here](https://swcarpentry.github.io/r-novice-gapminder-es/).
+
+- [Software Carpentries: *Programming with R*](https://swcarpentry.github.io/r-novice-inflammation/)
+
+#### Advanced resources
+
+- [*Geocomputation with R, 2019, Lovelace et al*](https://geocompr.robinlovelace.net/)
