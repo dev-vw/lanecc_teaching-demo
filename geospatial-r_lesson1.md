@@ -11,6 +11,13 @@ description: February 9th, 2022
 - Import vector data into R using the `sf` package.
 - Plot the vector data into R using the `ggplot2` package.
 
+# What learn R?
+
+- R is **reproducible**
+- R is **powerful**
+- R is **egalitarian**
+- R is **free**
+
 # Lesson 1 dataset and shared notes
 
 Before we begin this tutorial, please be sure to complete the following preparatory tasks:
@@ -44,13 +51,6 @@ You can access the shared notes [here](https://bit.ly/3sp08fC). Please open a se
 #### **Step 3:** Download the lesson 1 R script
 
 For every lesson, I will write-up the complete R script (or written list of R commands) used in our tutorial. Eventually, you will gain fluency in writing your own scripts for your own analytical and data manipulation purposes. For lesson 1, you can access the R script [here](/scripts/lesson1_script.r).
-
-# What learn R?
-
-- R is **reproducible**
-- R is **powerful**
-- R is **egalitarian**
-- R is **free**
 
 # An introduction to working with R
 
