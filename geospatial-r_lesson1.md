@@ -286,9 +286,9 @@ Using the `geom_sf(...)` function, we will layer on the `lc_ct` data saved in th
 #### More beginner R tutorials
 
 - [Software Carpentries: *R for Reproducible Scientific Analysis*](https://swcarpentry.github.io/r-novice-gapminder/). A Spanish version of this tutorial is available [here](https://swcarpentry.github.io/r-novice-gapminder-es/).
-
 - [Software Carpentries: *Programming with R*](https://swcarpentry.github.io/r-novice-inflammation/)
 
 #### Advanced resources
 
+- [Here's a guide](http://adv-r.had.co.nz/Style.html) to coding style and conventions in R
 - [*Geocomputation with R, 2019, Lovelace et al*](https://geocompr.robinlovelace.net/)
